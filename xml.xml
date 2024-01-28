@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student name="Jack">
+    <classes>
+      <class>
+        <name>math</name>
+        <teacher>Nielson<teacher/>
+        <recordingDate>2022-06-21</recordingDate>
+      </class>
+      <class>
+        <name>JavaScript</name>
+        <teacher>Novak<teacher/>
+        <recordingDate>2022-06-14</recordingDate>
+      </class>
+    </classes>
+  </student>
+  <student name="Tony">
+    <classes>
+      <class>
+        <name>algorithms</name>
+        <teacher>Novak<teacher/>
+        <recordingDate>2022-06-12</recordingDate>
+      </class>
+    </classes>
+    <emails>
+      <email>tony@gmail.com</email>
+      <email>tony@hotmail.com</email>
+    </emails>
+  </student>
+  <student name="Robert">
+    <classes>
+      <class>
+        <name>math</name>
+        <teacher>Nielson<teacher/>
+        <recordingDate>2022-06-13</recordingDate>
+      </class>
+    </classes>
+  </student>
+</students>

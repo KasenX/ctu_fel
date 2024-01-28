@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<friends>
+    <users>
+        <user id="u121" age="35">
+            <name>Peter</name>
+            <email>peter@friends.cz</email>
+        </user>
+    </users>
+</friends>

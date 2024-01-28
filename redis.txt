@@ -1,0 +1,29 @@
+# redis-cli
+
+HMSET user:1 name "John" age 30 email "john@example.com" 
+HSET user:1 address "123 Main St" 
+LPUSH user:1 hobbies "reading" "running" "biking" 
+SADD user:1 friends "Mike" "Emily" "Jessica" 
+
+HMSET user:2 name "Jane" age 25 email "jane@example.com" 
+HSET user:2 address "456 Park Ave" 
+LPUSH user:2 hobbies "cooking" "yoga" "travel" 
+SADD user:2 friends "Brian" "Ashley" "Sophie" 
+
+HMSET user:3 name "Bob" age 35 email "bob@example.com"
+HSET user:3 address "789 Elm St" 
+LPUSH user:3 hobbies "guitar" "fishing" "hiking" 
+SADD user:3 friends "Emily" "Mike" "Sophie"
+
+FT.CREATE idx:user ON HASH PREFIX 1 user: SCHEMA name TEXT age NUMERIC email TEXT address TEXT
+
+# Retrieve the hobbies, friends of users whose age is less than 30
+
+FT.SEARCH idx:user "@age:[0 29]" RETURN 1 hobbies
+
+# Retrieve the name, age, and hobbies of all users whose friends contain "Emily"
+
+
+
+# Remove "Sophie" from friends of user whose hobbies contain "fishing"
+

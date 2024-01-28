@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<friends>
+    <users>
+        <user id="u121" age="35">
+            <name>Peter</name>
+            <email>peter@friends.cz</email>
+        </user>
+        <user id="u654" age="25">
+            <name>Rachel</name>
+        </user>
+        <user id="u357" age="30">
+            <name>John</name>
+            <email>john@friends.cz</email>
+            <email>u357@users.friends.cz</email>
+            <phone>+420 777 555 111</phone>
+        </user>
+    </users>
+</friends>

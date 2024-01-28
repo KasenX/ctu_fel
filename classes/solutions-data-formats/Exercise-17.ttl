@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://www.friends.cz/schema#> .
+@prefix user: <http://www.friends.cz/users/> .
+@prefix group: <http://www.friends.cz/groups/> .
+
+user:u121 rdf:type schema:User ;
+          schema:name "Peter" ;
+          schema:age "35" ;
+          schema:email "peter@friends.cz" .
+
+user:u654 rdf:type schema:User ;
+          schema:name "Rachel" ;
+          schema:age "25" .
+
+user:u357 rdf:type schema:User ;
+          schema:name "John" ;
+          schema:age "30" ;
+          schema:email "john@friends.cz" ,
+                       "u357@users.friends.cz" ;
+          schema:phone "+420 777 555 111" .
+
+user:u654 schema:friend user:u121 ,
+                        user:u357 .
+
+user:u357 schema:friend user:u987 .
+
+group:g11 rdf:type schema:Group .
+group:g11 schema:name "Photographers" .
+
+group:g15 rdf:type schema:Group .
+group:g15 schema:name "Landscape Photographers" .
+
+group:g24 rdf:type schema:Group .
+group:g24 schema:name "Librarians" .
+
+group:g15 schema:subgroup group:g11 .
+
+user:u121 schema:member group:g15 ,
+                        group:g24 .
+
+user:u357 schema:member group:g15 .
+
+user:u121 schema:post _:node18 .
+
+_:node18 rdf:type schema:Post ;
+         schema:id "p530035" ;
+         schema:title "New trends in libraries" ;
+         schema:datetime "2018-10-08 09:30:00" .
+
+user:u121 schema:post [ rdf:type schema:Post ;
+                        schema:id "p530045" ;
+                        schema:title "Great photos of my family" ;
+                        schema:datetime "2018-10-08 09:45:00"
+                      ] .

@@ -1,0 +1,32 @@
+Exercise 8
+HMSET Alice_Brown name "Alice Brown" email "alice.brown@email.com"
+SADD Alice_Brown:journeys 2015 2016
+HMSET Alice_Brown:journey:2015 year 2015
+SADD Alice_Brown:journey:2015:places Italy:Roma Italy:Milan Italy:Venice
+HMSET Alice_Brown:journey:2016 year 2016
+SADD Alice_Brown:journey:2016:places Polland:Warsaw Polland:Krakov Czech_Republic:Prague Czech_Republic:Brno
+
+HMSET Alex_Fisher name "Alex Fisher"
+SADD Alex_Fisher:journeys 2016
+HMSET Alex_Fisher:journey:2016 year 2016
+SADD Alex_Fisher:journey:2016:places Germany:Berlin Germany:Erfurt Germany:Koln
+HMSET Betty_Fox name "Betty Fox" email "bet.fox@email.com"
+SADD Betty_Fox:journeys 2015 2017
+HMSET Betty_Fox:journey:2015 year 2015
+
+SADD Betty_Fox:journey:2015:places Istanbul
+HMSET Betty_Fox:journey:2017 year 2017
+SADD Betty_Fox:journey:2017:places Roma
+
+Exercise 9
+A. Retrieve the email address of Alice Brown.
+	HGET Alice_Brown email
+B. Check if Betty Fox traveled in 2016
+	SISMEMBER Betty_Fox:journeys 2016
+C. Retrieve all the places that Alex Fisher visited in 2016
+	SMEMBERS Alex_Fisher:journey:2016:places
+D. Retrieve all journeys made by Betty Fox
+	SMEMBERS Betty_Fox:journeys
+E. Where did the students travel in 2015?
+	SMEMBERS Alice_Brown:journey:2015:places
+	SMEMBERS Betty_Fox:journey:2015:places

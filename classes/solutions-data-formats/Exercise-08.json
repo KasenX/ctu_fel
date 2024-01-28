@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": "u121", "name": "Peter", "age": "35",
+            "emails": [ "peter@friends.cz" ]
+        },
+        {
+            "id": "u654", "name": "Rachel", "age": "25",
+            "friends": [ "u121", "u357" ]
+        },
+        {
+            "id": "u357", "name": "John", "age": "30",
+            "emails": [ "john@friends.cz", "u357@users.friends.cz" ],
+            "phone": "+420 777 555 111",
+            "friends": [ "u987" ]
+        }
+    ],
+    "groups": null,
+    "posts": null
+}

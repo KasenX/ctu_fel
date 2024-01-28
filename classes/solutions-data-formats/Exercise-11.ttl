@@ -1,0 +1,12 @@
+<http://www.friends.cz/users/u121> 
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+    <http://www.friends.cz/schema#User> .
+
+<http://www.friends.cz/users/u121> 
+    <http://www.friends.cz/schema#name> "Peter" .
+
+<http://www.friends.cz/users/u121> 
+    <http://www.friends.cz/schema#age> "35" .
+
+<http://www.friends.cz/users/u121> 
+    <http://www.friends.cz/schema#email> "peter@friends.cz" .

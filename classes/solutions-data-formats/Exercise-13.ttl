@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://www.friends.cz/schema#> .
+@prefix user: <http://www.friends.cz/users/> .
+
+user:u121 rdf:type schema:User .
+user:u121 schema:name "Peter" .
+user:u121 schema:age "35" .
+user:u121 schema:email "peter@friends.cz" .
+
+user:u654 rdf:type schema:User .
+user:u654 schema:name "Rachel" .
+user:u654 schema:age "25" .
+
+user:u357 rdf:type schema:User .
+user:u357 schema:name "John" .
+user:u357 schema:age "30" .
+user:u357 schema:email "john@friends.cz" .
+user:u357 schema:email "u357@users.friends.cz" .
+user:u357 schema:phone "+420 777 555 111" .

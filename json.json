@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Jack",
+    "classes": [
+      {
+        "class": "math",
+        "teacher": "Nielson",
+        "recordingDate": "2022-06-21"
+      },
+      {
+        "class": "JavaScript",
+        "teacher": "Novak",
+        "recordingDate": "2022-06-14"
+      }
+    ]
+  },
+  {
+    "name": "Tony",
+    "classes": [
+      {
+        "class": "algorithms",
+        "teacher": "Novak",
+        "recordingDate": "2022-06-12"
+      }
+    ],
+    "email": [
+      "tony@gmail.com",
+      "tony@hotmail.com"
+    ]
+  },
+  {
+    "name": "Robert",
+    "classes": [
+      {
+        "class": "math",
+        "teacher": "Nielson",
+        "recordingDate": "2022-06-13"
+      }
+    ]
+  }
+]
