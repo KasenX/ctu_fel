@@ -1,3 +1,5 @@
+// cypher-shell
+
 CREATE
 (p1:PERSON { name: "Alice", age: 25, hobbies: ["reading"], birthplace: "Anytown"}),
 (p2:PERSON { name: "Bob", age: 32, hobbies: ["playing guitar"], birthplace: "Samllvile"}),

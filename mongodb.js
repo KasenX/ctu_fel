@@ -1,3 +1,6 @@
+// mongosh --port 42222 -u login -p password database
+// mongosh --port 42222 -u f231_janecja9 -p hgqENl f231_janecja9
+
 // Example object
 /*
 {
